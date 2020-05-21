@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            .nav-wrapper {
+              background: linear-gradient(to right, purple, rgb(204, 44, 71), orange);
+            }
+        </style>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo">Wazzin</a>
+                    <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="material-icons">menu</i></a>
+                    <ul class="hide-on-med-and-down right">
+                        <li class="active"><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <ul class="sidenav" id="slide_out">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="images/w.jpg">
+                    </div>
+                <a href="#user"><img class="circle" src="images/wazzin.jpg"></a>
+                <a href="#name"><span class="gray-text name">John Doe</span></a>
+                <a href="#email"><span class="gray-text email">jdandturk@gmail.com</span></a>
+                </div>
+            </li>
+            <li class="active"><a><i class="material-icons">home</i>Home</a></li>
+            <li><a class="waves-effect"><i class="material-icons">public</i>Services</a></li>
+            <li><a class="waves-effect"><i class="material-icons">group</i>About Us</a></li>
+            <li><a class="waves-effect"><i class="material-icons">email</i>Contact Us</a></li>
+        </ul>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            const slide_menu=document.querySelectorAll(".sidenav");
+            M.Sidenav.init(slide_menu,{});
+        </script>
+    </body>
+</html>
